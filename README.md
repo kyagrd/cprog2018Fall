@@ -1,8 +1,5 @@
 # cprog2018Fall
-2018가을(2학기) 프로그래밍실습
-
-
-
+한남대학교 2018가을(2학기) 프로그래밍실습
 
 ## 수업에 사용할 책
  * [C 기초 플러스 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5825&category=020030060) (주교재)
