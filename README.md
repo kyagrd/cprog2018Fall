@@ -2,10 +2,10 @@
 [![강의노트 바로가기](https://upload.wikimedia.org/wikipedia/commons/4/4a/Aviso_%22categor%C3%ADzame%22_%28espa%C3%B1ol%29.svg)](https://github.com/kyagrd/cprog2018Fall/wiki)
 
 ## 수업에 사용할 책
- * 주교재: [C 기초 플러스 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5825&category=020030060)
-   (원서: [C Primer Plus (6th edition)](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321928423))
- * 부교재: [C++ 기초 플러스 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5888&category=020030060)
-   (원서: [C++ Primer Plus (6th edition)](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402))
+ * 주교재: [C 기초 플러스, 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5825&category=020030060)
+   (원서: [C Primer Plus, 6th edition](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321928423))
+ * 부교재: [C++ 기초 플러스, 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5888&category=020030060)
+   (원서: [C++ Primer Plus, 6th edition](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402))
 
 ## 실습에 사용할 SW
  * [GitKraken](https://www.gitkraken.com/)
