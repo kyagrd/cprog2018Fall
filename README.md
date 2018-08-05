@@ -3,3 +3,6 @@
 
 
 [Code::Blocks](http://www.codeblocks.org/)
+
+[GitKraken](https://www.gitkraken.com/)
+
