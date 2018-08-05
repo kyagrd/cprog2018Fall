@@ -15,13 +15,13 @@
      * 첫 강의/실습시간에 어떤 git 온라인 저장소 서비스를 사용해서 진행할지 공지할 예정이다.
  * [Nuwen MinGW distro](https://nuwen.net/mingw.html)
      * 윈도우즈 사용자들을 위한 gcc 컴파일러 및 디버거 등을 포함한 패키지이다. (리눅스나 맥을 사용할 경우 더 자연스러운 방법으로 gcc 컴파일러를 비롯한 C/C++ 개발도구를 설치할 수 있으므로 이 항목은 윈도우즈 사용자들에만 해당)
-     * 홈페이지에서 `mingw-16.0-without-git.exe` 다운로드
+     * Nuwen MinGW distro 홈페이지에서 `mingw-16.0-without-git.exe` 다운로드
      * 다운로드 받은 파일을 실행하려고 하면 윈도우즈에서 경고를 할 수도 있는데 무시하고 넘어가 실행시키면 `MinGW` 디렉토리가 만들어지며 그 안에 압축이 풀린다
      * `MinGW`를 디렉토리를 `C:\` 바로 아래로 옮긴다. 즉 `C:\MinGW` 에 오도록 옮긴다.
  
  * [Code::Blocks](http://www.codeblocks.org/)
      * 멀티플랫폼(리눅스, 맥, 윈도우즈 셋 다 지원) 통합 개발 환경(IDE)으로 기본적으로 C/C++를 포함한 여러 가지 언어 및 프로그래밍 환경을 지원한다.
-     * 윈도우즈 사용자의 경우 Downloads / Binary 에서 `codeblocks-17.12-setup.exe` 설치
+     * 윈도우즈 사용자의 경우 Code::Blocks 홈페이지의 Downloads / Binary 에서 `codeblocks-17.12-setup.exe` 설치
      * Nuwen MinGW distro와 Code::Blocks 설치후 설정방법이 정리된 영문 블로그 글
          * [Install Code::Blocks and GCC 8 on Windows](https://solarianprogrammer.com/2017/11/22/install-codeblocks-gcc-windows/)
      * 에디터 글꼴 설정은 네이버의 [D2Coding](https://github.com/naver/d2codingfont) 글꼴을 추천
