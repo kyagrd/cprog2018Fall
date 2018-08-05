@@ -22,7 +22,8 @@
  * [Code::Blocks](http://www.codeblocks.org/)
      * 멀티플랫폼(리눅스, 맥, 윈도우즈 셋 다 지원) 통합 개발 환경(IDE)으로 기본적으로 C/C++를 포함한 여러 가지 언어 및 프로그래밍 환경을 지원한다.
      * 윈도우즈 사용자의 경우 Downloads / Binary 에서 `codeblocks-17.12-setup.exe` 설치
-     * Nuwen MinGW distro와 Code::Blocks 설치후 설정방법이 정리된 영문 블로그 글: [Install Code::Blocks and GCC 8 on Windows](https://solarianprogrammer.com/2017/11/22/install-codeblocks-gcc-windows/)
+     * Nuwen MinGW distro와 Code::Blocks 설치후 설정방법이 정리된 영문 블로그 글
+         * [Install Code::Blocks and GCC 8 on Windows](https://solarianprogrammer.com/2017/11/22/install-codeblocks-gcc-windows/)
      * 에디터 글꼴 설정은 네이버의 [D2Coding](https://github.com/naver/d2codingfont) 글꼴을 추천
      * 이미 리눅스나 맥에서 C/C++ 컴파일러를 다른 방식으로 사용하는 것에 익숙한 사람은 굳이 이 통합개발환경을 사용할 필요는 없다.
      * 혹시 윈도우즈에서 Visual C/C++ 개발환경에 익숙한 사람의 경우 본인이 정말로 강력하게 원한다면 그것을 사용해서 실습해도 되지만 이 패키지에 포함된 gcc 8.1.0과 호환되지 않는 C/C++ 코드를 제출할 경우 프로그래밍 관련 점수를 받지 못하게 될 큰 위험부담을 본인이 감수하고 그로 인한 불이익에 대해서는 스스로가 책임질 각오를 단단히 한 경우에만 Visual C/C++을 사용해서 이 과목 실습을 진행하는 것도 불가능하지는 않겠지만 결코 추천하지 않는다.
