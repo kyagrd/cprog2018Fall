@@ -9,4 +9,5 @@
 
 ## 실습에 사용할 SW
  * [Code::Blocks](http://www.codeblocks.org/)
+     * 윈도우즈 사용자의 경우 Downloads / Binary 에서 `codeblocks-17.12mingw-setup.exe` 설치 
  * [GitKraken](https://www.gitkraken.com/)
