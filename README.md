@@ -5,7 +5,7 @@
 
 * 안기영 (컴퓨터공학과 조교수) kya@hnu.kr
 
-* 송민혁 (석사과정 장학조교) 
+* 송민혁 (석사과정 장학조교) smh7047@naver.com 
 
 * 잔디 메신저 https://cprg.jandi.com
 
