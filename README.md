@@ -1,6 +1,14 @@
 ## 강의노트
 [![강의노트 바로가기](https://upload.wikimedia.org/wikipedia/commons/4/4a/Aviso_%22categor%C3%ADzame%22_%28espa%C3%B1ol%29.svg)](https://github.com/kyagrd/cprog2018Fall/wiki)
 
+## 교수 및 조교 연락처
+
+* 안기영 (컴퓨터공학과 조교수) kya@hnu.kr
+
+* 송민혁 (석사과정 장학조교) 
+
+* 잔디 메신저 https://cprg.jandi.com
+
 ## 수업에 사용할 책
  * [C 기초 플러스, 6판](http://www.cyber.co.kr/shop/goods/goods_view.php?goodsno=5825&category=020030060)
    (원서: [C Primer Plus, 6th edition](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321928423))
@@ -45,3 +53,4 @@
      * 이미 리눅스나 맥에서 C/C++ 컴파일러를 다른 방식으로 사용하는 것에 익숙한 사람은 굳이 이 통합개발환경을 사용할 필요는 없다.
      * 혹시 윈도우즈에서 Visual C/C++ 개발환경에 익숙한 사람의 경우 본인이 정말로 강력하게 원한다면 그것을 사용해서 실습해도 되지만 Nuwen MinGW distro 패키지에 포함된 gcc 8.1.0과 호환되지 않는 C/C++ 코드를 제출할 경우 프로그래밍 관련 점수를 받지 못하게 될 큰 위험부담을 본인이 감수하고 그로 인한 불이익에 대해서는 스스로가 책임질 각오를 단단히 한 경우에만 Visual C/C++을 사용해서 이 과목 실습을 진행하는 것도 불가능하지는 않겠지만 결코 추천하지 않는다.
 
+ * https://cprg.jandi.com 잔디 메신저
