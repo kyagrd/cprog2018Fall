@@ -11,15 +11,15 @@ GitLab의 cprog 저장소 아래 `hw1` 하위 디렉토리에 `main.c`와 `hw1.c
 #include <stdio.h>
 
 void triR(void) {
-  // 이 함수를 완성하시오. (첫번째 과제: 4점)
+  // 이 함수를 완성하시오. (4점)
 }
 
 void triL(void) {
-  // 이 함수를 완성하시오 (두번째 과제: 1점)
+  // 이 함수를 완성하시오 (1점)
 }
 
 void dias(void) {
-  // 이 함수를 완성하시오 (두번째 과제: 1점)
+  // 이 함수를 완성하시오 (1점)
 }
 
 int main(void)
