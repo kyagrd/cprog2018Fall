@@ -31,6 +31,7 @@ int main(void)
     case 1: triR(); break;
     case 2: triL(); break;
     case 3: dias(); break;
+    default: return -1;
   }
   return 0;
 }
