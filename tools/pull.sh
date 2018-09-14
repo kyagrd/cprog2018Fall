@@ -1,5 +1,5 @@
 #!/bin/bash
-GITLABIDS=`cat gitlabids`
+GITLABIDS=`sort gitlabids`
 
 for id in $GITLABIDS
 do
