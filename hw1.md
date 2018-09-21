@@ -11,15 +11,39 @@ GitLab의 cprog 저장소 아래 `hw1` 하위 디렉토리에 `main.c`와 `hw1.c
 #include <stdio.h>
 
 void triR(void) {
+  int size, repeat;
+	scanf("%d %d", &size, &repeat);
+	printf("Hello world\n");
+  
+  // ...
   // 이 함수를 완성하시오. (4점)
+  // ...
+  
+	printf("Bye world\n");
 }
 
 void triL(void) {
-  // 이 함수를 완성하시오 (1점)
+  int size, repeat;
+	scanf("%d %d", &size, &repeat);
+	printf("Hello world\n");
+  
+  // ...
+  // 이 함수를 완성하시오. (1점)
+  // ...
+  
+	printf("Bye world\n");
 }
 
 void dias(void) {
-  // 이 함수를 완성하시오 (1점)
+  int size, repeat;
+	scanf("%d %d", &size, &repeat);
+	printf("Hello world\n");
+  
+  // ...
+  // 이 함수를 완성하시오. (1점)
+  // ...
+  
+	printf("Bye world\n");
 }
 
 int main(void)
