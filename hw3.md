@@ -7,7 +7,7 @@
 예를 들어 최대 차수를 9로 한정한다고 가정자자.
 이 때 다음과 같은 두 다항식을 
 
-<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;5&space;&plus;&space;2x&space;&plus;&space;3x^2&space;&plus;&space;7x^5&space;&plus;&space;8x^6&plus;x^7&plus;4x^9" title="5 + 2x + 3x^2 + 7x^5 + 8x^6+x^7+4x^9" />
+<img src="https://latex.codecogs.com/gif.latex?\dpi{110}&space;5&space;&plus;&space;2x&space;&plus;&space;3x^2&space;&plus;&space;7x^5&space;&plus;&space;8x^6&plus;x^7&plus;4x^9" title="5 + 2x + 3x^2 + 7x^5 + 8x^6+x^7+4x^9" />
 
 <img src="https://latex.codecogs.com/gif.latex?x&space;&plus;&space;2x^2&space;&plus;&space;3&space;x^3&space;&plus;&space;4&space;x^4&space;&plus;&space;5x^8&space;&plus;&space;x^9" title="- x + 2x^2 - 3 x^3 + 4 x^4 - 5x^8 + x^9" />
 
