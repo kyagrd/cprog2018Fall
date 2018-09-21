@@ -36,7 +36,7 @@ printpoly(poly1, 10); printf("\n");
 
 ## 두 다항식의 곱을 구하는 함수를 작성하라. (1점)
 ```c
-int* multpoly(const int* p1, int, const int* p2, int, int* dest)
+int* multpoly(const int* p1, int n1, const int* p2, int n2, int* dest)
 {
     // 함수 내용을 작성하라
     return dest;
