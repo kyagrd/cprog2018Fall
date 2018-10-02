@@ -17,14 +17,14 @@ do
 	if [ -f "$id/hw2/bin/Debug/hw2" ]
        	then
 		echo ==== testing $id ==== $( \
-			(test "`diff <(echo $WORD1 | $id/hw2/bin/Debug/hw2) <(echo $WORD1 | $HW2ANS)`" = ""  && echo 1 || echo 0)  > _hw2$id.txt; \
-			(test "`diff <(echo $WORD2 | $id/hw2/bin/Debug/hw2) <(echo $WORD2 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD3 | $id/hw2/bin/Debug/hw2) <(echo $WORD3 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD4 | $id/hw2/bin/Debug/hw2) <(echo $WORD4 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD5 | $id/hw2/bin/Debug/hw2) <(echo $WORD5 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD6 | $id/hw2/bin/Debug/hw2) <(echo $WORD6 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD7 | $id/hw2/bin/Debug/hw2) <(echo $WORD7 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
-			(test "`diff <(echo $WORD8 | $id/hw2/bin/Debug/hw2) <(echo $WORD8 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD1 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD1 | $HW2ANS)`" = ""  && echo 1 || echo 0)  > _hw2$id.txt; \
+			(test "`diff <(echo $WORD2 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD2 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD3 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD3 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD4 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD4 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD5 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD5 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD6 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD6 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD7 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD7 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
+			(test "`diff <(echo $WORD8 | timeout 0.2 $id/hw2/bin/Debug/hw2) <(echo $WORD8 | $HW2ANS)`" = ""  && echo 1 || echo 0) >> _hw2$id.txt; \
 			echo "$(echo 0`sed s/^/+/ _hw2$id.txt` | bc)/2" | bc)
 
 	fi
