@@ -121,9 +121,11 @@ void printpoly(int n, const int poly[])
     // 이 함수를 작성하라 (4점)
 }
 
-int* multpoly(int dest[], int n1, const int poly1[], int n2, const int poly2[])
+int* multpoly(int dest[],
+              int n1, const int poly1[],
+              int n2, const int poly2[])
 {
-    // 아래 줄은 poly에 poly1을 그대로 복사하는 더미 구현이므로 곱셈을 하도록 수정하라 (1점)
+    // 아래는 poly에 poly1을 그대로 복사하는 더미 구현이므로 곱셈을 하도록 수정 (1점)
     for(int i=0; i<n1; ++i) dest[i] = poly1[i];
 
     return dest;
