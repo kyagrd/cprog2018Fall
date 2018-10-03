@@ -6,6 +6,7 @@ HW3ANS=kyagrd/hw3/bin/Debug/hw3
 WORD1=`./random-word-generator  10`
 WORD2=`./random-word-generator  20`
 WORD4=`./random-word-generator  30`
+WORD3="       	  `./random-word-generator 20`    	    `./random-word-generator 20`      	  "
 WORD5=`./random-word-generator  50`
 WORD6=`./random-word-generator  60 `
 WORD7=`./random-word-generator  80`
