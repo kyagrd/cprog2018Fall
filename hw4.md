@@ -17,7 +17,9 @@ int poly1[10] = { 5, 2, 3, 0, 0, 7, 8, 1, 0, 4 };
 int poly2[10] = { 0,-1, 2,-3, 4, 0, 0, 0,-5, 1 };
 ```
 
-## 아래와 같이 출력하는 `void printpoly(const int[], int)` 함수 작성 (4점)
+## 아래와 같이 출력하는 함수 작성 (4점)
+함수의 프로토타입은 `void printpoly(const int[], int)`이며 실행한 결과들은 다음과 같다. 
+
 ```c
 printpoly(poly1, 10); printf("\n");
 ```
