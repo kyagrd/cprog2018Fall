@@ -1,4 +1,4 @@
-# hw4 (TODO 출제중, 11/2 밤까지)
+# hw4 (11/2 밤까지 제출; 5점)
 
 다항식은 그 계수(coefficient)들의 배열로 나타낼 수 있다.
 여기서는 계수들이 정수인 다항식만 고려한다.
@@ -123,7 +123,7 @@ void printpoly(int n, const int poly[])
 
 int* multpoly(int dest[], int n1, const int poly1[], int n2, const int poly2[])
 {
-    // 아래 줄은 poly에 poly1을 그대로 복사하는 더미 구현이므로 수정하라 (1점)
+    // 아래 줄은 poly에 poly1을 그대로 복사하는 더미 구현이므로 곱셈을 하도록 수정하라 (1점)
     for(int i=0; i<n1; ++i) dest[i] = poly1[i];
 
     return dest;
