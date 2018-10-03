@@ -18,22 +18,16 @@ int poly2[10] = { 0,-1, 2,-3, 4, 0, 0, 0,-5, 1 };
 ```
 
 ## 아래와 같이 출력하는 함수 작성 (4점)
-함수의 프로토타입은 `void printpoly(const int[], int)`이며 실행한 결과들은 다음과 같다. 
+함수의 프로토타입은 `void printpoly(const int[], int)`이며 이 함수를 이용한 코드를 실행한 출력 결과는 다음과 같다. 
 
 ```c
 printpoly(poly1, 10); printf("\n");
-```
-
-```
-5 +2x +3x^2 +7x^5 +8x^6 +x^7 +4x^9
-```
-
-```c
-printpoly(poly1, 10); printf("\n");
+printpoly(poly2, 10); printf("\n");
 ```
 
 ```
 -x +2x^2 -3x^3 +4x^4 -5x^8 +x^9
+5 +2x +3x^2 +7x^5 +8x^6 +x^7 +4x^9
 ```
 
 ## 두 다항식의 곱을 구하는 함수를 작성하라. (1점)
