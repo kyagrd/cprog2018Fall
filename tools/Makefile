@@ -10,12 +10,14 @@ HW4DIRS=$(addsuffix /hw4,$(GITLABIDS))
 HW0CBP2MAKE:=$(foreach hwdir,$(HW0DIRS),cbp2make -in $(hwdir)/hw0.cbp -out $(hwdir)/Makefile;)
 HW1CBP2MAKE:=$(foreach hwdir,$(HW1DIRS),cbp2make -in $(hwdir)/hw1.cbp -out $(hwdir)/Makefile;)
 HW2CBP2MAKE:=$(foreach hwdir,$(HW2DIRS),cbp2make -in $(hwdir)/hw2.cbp -out $(hwdir)/Makefile;)
-HW3CBP2MAKE:=$(foreach hwdir,$(HW3DIRS),cbp2make -in $(hwdir)/hw2.cbp -out $(hwdir)/Makefile;)
+HW3CBP2MAKE:=$(foreach hwdir,$(HW3DIRS),cbp2make -in $(hwdir)/hw3.cbp -out $(hwdir)/Makefile;)
+HW4CBP2MAKE:=$(foreach hwdir,$(HW4DIRS),cbp2make -in $(hwdir)/hw4.cbp -out $(hwdir)/Makefile;)
 
 HW0MAKE=$(foreach hwdir,$(HW0DIRS),make -C $(hwdir);)
 HW1MAKE=$(foreach hwdir,$(HW1DIRS),make -C $(hwdir);)
 HW2MAKE=$(foreach hwdir,$(HW2DIRS),make -C $(hwdir);)
 HW3MAKE=$(foreach hwdir,$(HW3DIRS),make -C $(hwdir);)
+HW4MAKE=$(foreach hwdir,$(HW4DIRS),make -C $(hwdir);)
 
 all:
 	echo $(GITLABIDS)
@@ -39,4 +41,9 @@ hw3:
 	echo $(HW3DIRS)
 	$(HW3CBP2MAKE)
 	$(HW3MAKE)
+
+hw4:
+	echo $(HW4DIRS)
+	$(HW4CBP2MAKE)
+	$(HW4MAKE)
 
