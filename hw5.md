@@ -73,7 +73,7 @@ int main(void)
 
 void printpoly3(int nx, int ny, int nz, int*** p)
 {
-    // 이 함수를 작성하라
+    // 이 함수를 작성하라 (5점)
 }
 
 int*** multpoly3(
@@ -81,7 +81,7 @@ int*** multpoly3(
          int nx1, int ny1, int nz1, int ***p1,
          int nx2, int ny2, int nz2, int ***p2)
 {
-    // 이 함수를 작성하라
+    // 이 함수를 작성하라 (1점)
 
     return dest;
 }
