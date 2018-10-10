@@ -21,13 +21,17 @@ hw4를 제대로 이해하지 못한 상태에서는 전혀 가망이 없다.
 #define N 6
 
 // x,y,z의 최대 차수가 각각 nx,ny,nz인
-// 다항식에 대한 삼중 포인터를 받아 출력하는 함수
+// 다항식에 대한 삼중 포인터를 받아 출력하는 함수로
+// 출력방식은 x의 차수에 대한 내림차순 최우선하며
+// x의 차수가 같은 항끼리는 y에 대한 내림차순을 우선하고
+// 마지막으로 x와 y의 차수가 둘 다 같을 때는 z에 대한
+// 내림차순으로 각 항들을 출력한다.
 void printpoly3(int nx, int ny, int nz, int*** p);
 
 // x,y,z의 최대 차수 nx1,ny1,nz1 및 nx2,ny2,nz2인
 // 두 다항식에 대한 삼중 포인터 p1와 p2의 곱을
 // x,y,z의 최대 차수 각각 nx,ny,nz 까지 저장 가능한
-// 삼중 포인터 dest에 저장하는 함수
+// 삼중 포인터 dest에 저장하는 함수이다.
 int*** multpoly3(
          int nx,  int ny,  int nz,  int ***dest,
          int nx1, int ny1, int nz1, int ***p1,
