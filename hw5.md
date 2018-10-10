@@ -63,10 +63,10 @@ int main(void)
 
     multpoly3(N,N,N,p, N1,N1,N1,p1, N2,N2,N2,p2);
 
-    printf(" \t"); printpoly3(N1,N1,N1,p1); printf("\n");
-    printf("*\t"); printpoly3(N2,N2,N2,p2); printf("\n");
+    printf("  "); printpoly3(N1,N1,N1,p1); printf("\n");
+    printf("* "); printpoly3(N2,N2,N2,p2); printf("\n");
     printf("------------------------------------------------------------\n");
-    printf(" \t"); printpoly3(N,N,N,p); printf("\n");
+    printf("  "); printpoly3(N,N,N,p); printf("\n");
 
     return 0;
 }
