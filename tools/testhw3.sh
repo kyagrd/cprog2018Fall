@@ -13,8 +13,8 @@ WORD7=`./random-word-generator  80`
 WORD8=`./random-word-generator 100`
 WORD9="       	  `./random-word-generator 30`    	    `./random-word-generator 20`      	  "
 WORDa="       	  `./random-word-generator 40`    	    `./random-word-generator 25`      	  "
-WORDb="       	  `./random-word-generator 50`    	    `./random-word-generator 30`      	  "
-WORDc="       	  `./random-word-generator 60`    	    `./random-word-generator 35`      	  "
+WORDb="       	  `./random-word-generator 50`    	    `./random-word-generator 30`      	  "
+WORDc="       	  `./random-word-generator 60`    	    `./random-word-generator 35`      	  "
 
 
 for id in $GITLABIDS
@@ -30,10 +30,10 @@ do
 			(test "`diff <(echo $WORD6 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORD6 | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
 			(test "`diff <(echo $WORD7 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORD7 | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
 			(test "`diff <(echo $WORD8 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORD8 | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
-			(test "`diff <(echo $WORD8 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORD9 | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
-			(test "`diff <(echo $WORD8 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDa | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
-			(test "`diff <(echo $WORD8 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDb | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
-			(test "`diff <(echo $WORD8 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDc | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
+			(test "`diff <(echo $WORD9 | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORD9 | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
+			(test "`diff <(echo $WORDa | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDa | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
+			(test "`diff <(echo $WORDb | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDb | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
+			(test "`diff <(echo $WORDc | timeout 1 $id/hw3/bin/Debug/hw3) <(echo $WORDc | $HW3ANS)`" = ""  && echo 1 || echo 0) >> _hw3$id.txt; \
 			echo "$(echo 0`sed s/^/+/ _hw3$id.txt` | bc)/3" | bc)
 
 	fi
