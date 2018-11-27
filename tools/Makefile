@@ -1,4 +1,4 @@
-.PHONY: all hw0 hw1
+.PHONY: all hw0 hw1 hw2 hw3 hw4 hw5
 
 GITLABIDS=$(shell sort gitlabids)
 HW0DIRS=$(addsuffix /hw0,$(GITLABIDS))
@@ -6,18 +6,21 @@ HW1DIRS=$(addsuffix /hw1,$(GITLABIDS))
 HW2DIRS=$(addsuffix /hw2,$(GITLABIDS))
 HW3DIRS=$(addsuffix /hw3,$(GITLABIDS))
 HW4DIRS=$(addsuffix /hw4,$(GITLABIDS))
+HW5DIRS=$(addsuffix /hw5,$(GITLABIDS))
 
 HW0CBP2MAKE:=$(foreach hwdir,$(HW0DIRS),cbp2make -in $(hwdir)/hw0.cbp -out $(hwdir)/Makefile;)
 HW1CBP2MAKE:=$(foreach hwdir,$(HW1DIRS),cbp2make -in $(hwdir)/hw1.cbp -out $(hwdir)/Makefile;)
 HW2CBP2MAKE:=$(foreach hwdir,$(HW2DIRS),cbp2make -in $(hwdir)/hw2.cbp -out $(hwdir)/Makefile;)
 HW3CBP2MAKE:=$(foreach hwdir,$(HW3DIRS),cbp2make -in $(hwdir)/hw3.cbp -out $(hwdir)/Makefile;)
 HW4CBP2MAKE:=$(foreach hwdir,$(HW4DIRS),cbp2make -in $(hwdir)/hw4.cbp -out $(hwdir)/Makefile;)
+HW5CBP2MAKE:=$(foreach hwdir,$(HW5DIRS),cbp2make -in $(hwdir)/hw5.cbp -out $(hwdir)/Makefile;)
 
 HW0MAKE=$(foreach hwdir,$(HW0DIRS),make -C $(hwdir);)
 HW1MAKE=$(foreach hwdir,$(HW1DIRS),make -C $(hwdir);)
 HW2MAKE=$(foreach hwdir,$(HW2DIRS),make -C $(hwdir);)
 HW3MAKE=$(foreach hwdir,$(HW3DIRS),make -C $(hwdir);)
 HW4MAKE=$(foreach hwdir,$(HW4DIRS),make -C $(hwdir);)
+HW5MAKE=$(foreach hwdir,$(HW5DIRS),make -C $(hwdir);)
 
 all:
 	echo $(GITLABIDS)
@@ -46,4 +49,9 @@ hw4:
 	echo $(HW4DIRS)
 	$(HW4CBP2MAKE)
 	$(HW4MAKE)
+
+hw5:
+	echo $(HW5DIRS)
+	$(HW5CBP2MAKE)
+	$(HW5MAKE)
 
