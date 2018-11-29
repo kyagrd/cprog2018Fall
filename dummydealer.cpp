@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
         std::cout <<v.back() <<std::endl;
         v.pop_back();
     }
-    // std::cout <<std::endl;
+    std::cout <<std::endl;
     // deal done
 
     std::string s;
