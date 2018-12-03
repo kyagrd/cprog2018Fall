@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # player goes last
 coproc ./dummydealer
 ./player <&"${COPROC[0]}" >&"${COPROC[1]}"
