@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 
             str[0] = shape2char(myshape);
             str[1] = value2char(myvalue);
-            str[3] = '\0';
+            str[2] = '\0';
             cards[myshape][myvalue] = 0; // 사용한 카드는 0으로
             printf("%s\n", str); fflush(stdout);
 
@@ -89,7 +89,7 @@ int main(int argc, char* argv[])
 
             str[0] = shape2char(myshape);
             str[1] = value2char(myvalue);
-            str[3] = '\0';
+            str[2] = '\0';
             cards[myshape][myvalue] = 0; // 사용한 카드는 0으로
             printf("%s\n", str); fflush(stdout);
         }
