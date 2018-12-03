@@ -20,7 +20,7 @@ void nextcardMeLast(int cards[][13],
         for (int i=3; i>=0; --i)
             if(*p_myshape<0 && *p_myvalue<0 && 1==cards[i][j]) {
                 *p_myshape=i; // 0, 1, 2, 3
-                *p_myvalue=j; // 0 - 11
+                *p_myvalue=j; // 0 - 12
             }
 }
 
