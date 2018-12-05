@@ -95,15 +95,6 @@ int main(int argc, char* argv[])
             strMe[2] = '\0';
             cards[myshape][myvalue] = 0; // 사용한 카드는 0으로
             printf("%s\n", strMe); fflush(stdout);
-
-            // // log result -- for the final exam evaluation only (not for dummydealer testing)
-            // if ( myvalue == yourvalue ) {
-            //     fprintf(stderr, "%s %s\tdraw\n",    str, strMe);
-            // } else if ( (strMe[1]=='2' && str[2]=='A') || myvalue > yourvalue ) {
-            //     fprintf(stderr, "%s %s\t%s won\n",  str, strMe, argv[0]);
-            // } else {                                          
-            //     fprintf(stderr, "%s %s\t%s lost\n", str, strMe, argv[0]);
-            // }
         }
     }
 
