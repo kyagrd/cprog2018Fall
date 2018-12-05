@@ -56,6 +56,7 @@ int main(int argc, char* argv[])
     getCards(cards); // 딜러로부터 카드 받기
 
     char str[8];
+    char strMe[8];
 
     if (argc>1) { // 내 카드를 먼저 제시하고 상대방이 그걸 보고 대응하는 경우
         for (int n=0; n<26; ++n) {
@@ -65,11 +66,11 @@ int main(int argc, char* argv[])
             nextcardMeFirst(cards, &myshape, &myvalue);
             assert(1==cards[myshape][myvalue]);
 
-            str[0] = shape2char(myshape);
-            str[1] = value2char(myvalue);
-            str[2] = '\0';
+            strMe[0] = shape2char(myshape);
+            strMe[1] = value2char(myvalue);
+            strMe[2] = '\0';
             cards[myshape][myvalue] = 0; // 사용한 카드는 0으로
-            printf("%s\n", str); fflush(stdout);
+            printf("%s\n", strMe); fflush(stdout);
 
             scanf("%s", str);
             int yourshape = char2shape(str[0]);
@@ -89,11 +90,20 @@ int main(int argc, char* argv[])
             nextcardMeLast(cards, yourshape, yourvalue, &myshape, &myvalue);
             assert(1==cards[myshape][myvalue]);
 
-            str[0] = shape2char(myshape);
-            str[1] = value2char(myvalue);
-            str[2] = '\0';
+            strMe[0] = shape2char(myshape);
+            strMe[1] = value2char(myvalue);
+            strMe[2] = '\0';
             cards[myshape][myvalue] = 0; // 사용한 카드는 0으로
             printf("%s\n", str); fflush(stdout);
+
+            // log result
+            if ( myvalue == yourvalue ) {
+                fprintf(stderr, "%s %s\tdraw\n",    str, strMe);
+            } else if ( (strMe[1]=='2' && str[2]=='A') || myvalue > yourvalue ) {
+                fprintf(stderr, "%s %s\t%s won\n",  str, strMe, argv[0]);
+            } else {                                          
+                fprintf(stderr, "%s %s\t%s lost\n", str, strMe, argv[0]);
+            }
         }
     }
 

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <iterator>
 #include <random>
+#include <cassert>
 
 char suit( int n ) { return "CDHS"[n % 4]; }
 char rank( int n ) { return "234567890JQKA"[n % 13]; }
@@ -50,54 +51,28 @@ void init_cards(std::vector<std::string>& v) {
 
 int main(int argc, char* argv[])
 {
+    assert( argc > 1 );
+    int n = std::atoi(argv[1]);
+    assert( n > 0 );
+
     std::vector<std::string> v;
     init_cards(v);
+
     std::default_random_engine gen{13};
-    std::shuffle(v.begin(), v.end(), gen);
+
+    for (int i=0; i<n; ++i)
+        std::shuffle(v.begin(), v.end(), gen);
 
 	// for (std::string s : v) std::cout <<s <<" "; // for debugging only
 
-    // deal begin
+    if (argc>2) { for (int k=0; k<26; ++k) v.pop_back(); }
+
     for (int k=0; k<26; ++k) {
         std::cout <<v.back() <<std::endl;
         v.pop_back();
     }
     std::cout <<std::endl;
-    // deal done
 
-    std::string s;
-    // dummy player
-    if (argc > 1) {
-        // going last
-        for (auto i = v.begin(); i != v.end(); ++i) {
-            std::cin >>s;
-            std::cout <<*i <<std::endl;
-
-            if (rank2int((*i)[1]) == rank2int(s[1])) {
-                std::cerr <<s <<' ' <<*i <<'\t' <<"draw" <<std::endl;
-            } else if (((*i)[1]=='A' && s[1]=='2') ||
-                       (rank2int((*i)[1]) < rank2int(s[1])) ) {
-                std::cerr <<s <<' ' <<*i <<'\t' <<"player won" <<std::endl;
-            } else {
-                std::cerr <<s <<' ' <<*i <<'\t' <<"player lost" <<std::endl;
-            }
-        }
-    } else {
-        // going first
-        for (auto i = v.begin(); i != v.end(); ++i) {
-            std::cout <<*i <<std::endl;
-            std::cin >>s;
-
-            if (rank2int((*i)[1]) == rank2int(s[1])) {
-                std::cerr <<*i <<' ' <<s <<'\t' <<"draw" <<std::endl;
-            } else if (((*i)[1]=='A' && s[1]=='2') ||
-                       (rank2int((*i)[1]) < rank2int(s[1])) ) {
-                std::cerr <<*i <<' ' <<s <<'\t' <<"player won" <<std::endl;
-            } else {
-                std::cerr <<*i <<' ' <<s <<'\t' <<"player lost" <<std::endl;
-            }
-        }
-    }
-    
     return 0;
 }
+
