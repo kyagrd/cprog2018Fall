@@ -90,8 +90,8 @@ int main(int argc, char* argv[])
 
             if (rank2int((*i)[1]) == rank2int(s[1])) {
                 std::cerr <<*i <<' ' <<s <<'\t' <<"draw" <<std::endl;
-            } else if (((*i)[1]=='A' && s[1]=='2') ||
-                       (rank2int((*i)[1]) < rank2int(s[1])) ) {
+            } else if (    ((*i)[1]=='A' && s[1]=='2') ||
+                        ( !((*i)[1]=='2' && s[1]=='A') && (rank2int((*i)[1]) < rank2int(s[1])) ) ) {
                 std::cerr <<*i <<' ' <<s <<'\t' <<"player won" <<std::endl;
             } else {
                 std::cerr <<*i <<' ' <<s <<'\t' <<"player lost" <<std::endl;

@@ -99,7 +99,8 @@ int main(int argc, char* argv[])
             // log result
             if ( myvalue == yourvalue ) {
                 fprintf(stderr, "%s %s\tdraw\n",    str, strMe);
-            } else if ( (strMe[1]=='2' && str[2]=='A') || myvalue > yourvalue ) {
+            } else if (    (strMe[1]=='2' && str[2]=='A') ||
+                        ( !(strMe[1]=='A' && str[2]=='2') && myvalue > yourvalue ) ) {
                 fprintf(stderr, "%s %s\t%s won\n",  str, strMe, argv[0]);
             } else {                                          
                 fprintf(stderr, "%s %s\t%s lost\n", str, strMe, argv[0]);
