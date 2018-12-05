@@ -65,11 +65,16 @@ int main(int argc, char* argv[])
 
 	// for (std::string s : v) std::cout <<s <<" "; // for debugging only
 
-    if (argc>2) { for (int k=0; k<26; ++k) v.pop_back(); }
-
-    for (int k=0; k<26; ++k) {
-        std::cout <<v.back() <<std::endl;
-        v.pop_back();
+    if (argc>2) {
+        for (int k=0; k<26; ++k) v.pop_back();
+        for (int k=0; k<26; ++k)
+            std::cout <<v[k] <<std::endl;
+    }
+    else {
+        for (int k=0; k<26; ++k) {
+            std::cout <<v.back() <<std::endl;
+            v.pop_back();
+        }
     }
     std::cout <<std::endl;
 
