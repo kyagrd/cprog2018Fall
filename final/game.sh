@@ -1,10 +1,11 @@
-sleep 0.025
-mkfifo fifo1 fifo2
-sleep 0.025
-./simpledealer $1 latter >fifo1 &
-./simpledealer $1        >fifo2 &
-$2 mefirst <fifo2 >>fifo1 &
-$3         <fifo1 >>fifo2
-sleep 0.025
-rm fifo1 fifo2
-sleep 0.025
+FIFO1="_FIFO1_$RANDOM"
+FIFO2="_FIFO2_$RANDOM"
+mkfifo $FIFO1 $FIFO2
+sleep 0.05
+cat deal_$1_latter >$FIFO1 &
+cat deal_$1_former >$FIFO2 &
+($2 mefirst && sleep 0.1) <$FIFO2 >$FIFO1 &
+($3         && sleep 0.1) <$FIFO1 >$FIFO2
+sleep 0.1
+rm $FIFO1 $FIFO2
+sleep 0.05

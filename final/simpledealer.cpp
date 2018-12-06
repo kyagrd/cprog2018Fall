@@ -54,11 +54,13 @@ int main(int argc, char* argv[])
     assert( argc > 1 );
     int n = std::atoi(argv[1]);
     assert( n > 0 );
+    std::cerr <<n <<std::endl;
 
     std::vector<std::string> v;
     init_cards(v);
 
-    std::default_random_engine gen{13};
+    // std::default_random_engine gen{13};
+    std::knuth_b gen;
 
     for (int i=0; i<n; ++i)
         std::shuffle(v.begin(), v.end(), gen);
