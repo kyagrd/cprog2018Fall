@@ -44,8 +44,11 @@ numbers =
 
 matches = [(x,y) | x<-numbers, y<-numbers, x<y]
 
-matchcmds n = concat [ ["./game.sh "++show k++" ./"++show x++" ./"++show y]++
-                       ["./game.sh "++show k++" ./"++show x++" ./"++show y]
+logfile k x y = "log"++show(x`mod`10000)++"vs"++show(y`mod`10000)++"_"++show k
+
+matchcmds n = concat [ ["./game.sh "++show k++" ./"++show x++" ./"++show y++" >"++logfile k x y++" 2>&1"
+                       ,"./game.sh "++show k++" ./"++show y++" ./"++show x++" >"++logfile k y x++" 2>&1"
+                       ]
                       | (x,y)<-matches, k<-[1..n] ]
 
 main = mapM_ putStrLn $ matchcmds 5 
