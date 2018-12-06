@@ -46,8 +46,12 @@ matches = [(x,y) | x<-numbers, y<-numbers, x<y]
 
 logfile k x y = "log"++show(x`mod`10000)++"vs"++show(y`mod`10000)++"_"++show k
 
-matchcmds n = concat [ ["./game.sh "++show k++" ./"++show x++" ./"++show y++" >"++logfile k x y++" 2>&1" | _<-[x], (x`mod`10000)/=597]++
-                       ["./game.sh "++show k++" ./"++show y++" ./"++show x++" >"++logfile k y x++" 2>&1" | _<-[y], (y`mod`10000)/=597]
-                      | (x,y)<- matches, k<-[1..n] ]
+matchcmds n = concat [ ["./game.sh "++show k++" ./"++show x++" ./"++show y++" >"++logfile k x y++" 2>&1"
+                       ,"./game.sh "++show k++" ./"++show y++" ./"++show x++" >"++logfile k y x++" 2>&1"]
+                      | (x,y)<- matches,
+                        (x`mod`10000)/=597, (x`mod`10000)/=710,
+                        (y`mod`10000)/=597, (y`mod`10000)/=710,
+                        k<-[1..n]
+                     ]
 
 main = mapM_ putStrLn $ matchcmds 5 

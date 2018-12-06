@@ -1,0 +1,26 @@
+S2 C2	draw
+D2 H2	draw
+D3 H3	draw
+C3 S3	draw
+D4 C4	draw
+S5 H4	./20180746 lost
+H5 S4	./20180746 lost
+C5 D5	draw
+H6 S6	draw
+D6 C7	./20180746 won
+C6 C8	./20180746 won
+S7 H8	./20180746 won
+H7 S8	./20180746 won
+D7 D9	./20180746 won
+D8 H9	./20180746 won
+C9 S9	draw
+S0 C0	draw
+DJ D0	./20180746 lost
+CJ H0	./20180746 lost
+HQ HJ	./20180746 lost
+DQ SJ	./20180746 lost
+CQ SQ	draw
+DK CK	draw
+SA HK	./20180746 lost
+HA SK	./20180746 lost
+CA DA	draw
