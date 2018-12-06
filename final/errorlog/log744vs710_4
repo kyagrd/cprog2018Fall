@@ -1,0 +1,10 @@
+SA C2	./20180710 won
+HA H2	./20180710 won
+CA H3	./20180710 lost
+DK DA	./20180710 won
+HQ CK	./20180710 won
+DQ HK	./20180710 won
+CQ SK	./20180710 won
+DJ SQ	./20180710 won
+20180710: playerMain.txt:52: main: Assertion `1==cards[myshape][myvalue]' failed.
+./game.sh: line 8: 11779 중지됨               $3

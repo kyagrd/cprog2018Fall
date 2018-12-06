@@ -1,0 +1,2 @@
+20180597: playerMain.txt:28: main: Assertion `1==cards[myshape][myvalue]' failed.
+./game.sh: line 7:  4989 중지됨               $2 mefirst

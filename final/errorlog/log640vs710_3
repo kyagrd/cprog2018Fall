@@ -1,0 +1,22 @@
+D2 D3	./20180710 won
+H3 D4	./20180710 won
+C3 C5	./20180710 won
+S4 D5	./20180710 won
+H4 S5	./20180710 won
+C4 H6	./20180710 won
+H5 S6	./20180710 won
+D6 D7	./20180710 won
+C6 C8	./20180710 won
+S7 D8	./20180710 won
+H7 H8	./20180710 won
+C7 D9	./20180710 won
+S8 H9	./20180710 won
+S9 D0	./20180710 won
+C9 H0	./20180710 won
+C0 HJ	./20180710 won
+DJ HQ	./20180710 won
+CJ SQ	./20180710 won
+DQ CK	./20180710 won
+CQ CA	./20180710 won
+20180710: playerMain.txt:52: main: Assertion `1==cards[myshape][myvalue]' failed.
+./game.sh: line 8:  8979 중지됨               $3
