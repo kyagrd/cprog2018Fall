@@ -1,4 +1,3 @@
-filenames.txt
 log586vs587_1
 log586vs587_2
 log586vs587_3
